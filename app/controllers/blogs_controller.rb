@@ -22,9 +22,9 @@ class BlogsController < ApplicationController
   	redirect_to blogs_path
   end
 
-  private
+private
 
   def blog_params
-  	paras.require(:blog).permit(:title, :category, :body)
+  	params.require(:blog).permit(:title, :category, :body)
   end
 end
